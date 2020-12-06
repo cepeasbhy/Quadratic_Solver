@@ -17,7 +17,9 @@ public class prob2 {
 		
 		int a = Integer.parseInt(get_val[0]);
 		int b = Integer.parseInt(get_val[1]);
-		int c = Integer.parseInt(get_val[3]);
+		int c = Integer.parseInt(get_val[2]);
+		
+		int discriminat = ((b*b)-(4*a*c));
 		
 	}
 		
