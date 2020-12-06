@@ -35,14 +35,15 @@ public class prob2 {
 			}else if(discriminat > 0) {
 				double x1 = (-b+root)/(2*a);
 				double x2 = (-b-root)/(2*a);
-				System.out.printf("x1 = " + x1 + " x2 = "+ x2);
+				
+				System.out.println("x1 = " + String.format("%.2f", x1) + " x2 = "+ String.format("%.2f", x2));
 				
 			}else if(discriminat == 0) {
 				double result = -b/(2*a);
-				System.out.print("x = "+result);
+				System.out.println("x = "+ String.format("%.2f", result));
 				
 			}else{
-				System.out.print("x = IMAGINARY");
+				System.out.println("x = IMAGINARY");
 				
 			}
 			
