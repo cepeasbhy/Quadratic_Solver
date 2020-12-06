@@ -20,6 +20,16 @@ public class prob2 {
 		int c = Integer.parseInt(get_val[2]);
 		
 		int discriminat = ((b*b)-(4*a*c));
+		double root = Math.sqrt(discriminat);
+		
+		if(discriminat > 0) {
+			double x1 = (-b+root)/(2*a);
+			double x2 = (-b-root)/(2*a);
+			System.out.print("x1 = " + x1 + " x2 = "+ x2);
+		}
+		
+		
+		
 		
 	}
 		
