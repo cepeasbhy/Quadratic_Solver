@@ -7,8 +7,6 @@ public class prob2 {
 		Scanner input = new Scanner(System.in);
 		int[] num = new int[3];
 		
-		int result  = 0;
-		
 		System.out.print("Enter value for A, B, C[Separated by space]: ");
 		
 		String in  = input.nextLine();
@@ -31,6 +29,14 @@ public class prob2 {
 			double x1 = (-b+root)/(2*a);
 			double x2 = (-b-root)/(2*a);
 			System.out.print("x1 = " + x1 + " x2 = "+ x2);
+			
+		}else if(discriminat == 0) {
+			double result = -b/(2*a);
+			System.out.print("x = "+result);
+			
+		}else{
+			System.out.print("x = IMAGINARY");
+			
 		}
 		
 	}
