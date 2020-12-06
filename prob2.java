@@ -7,15 +7,18 @@ public class prob2 {
 		Scanner input = new Scanner(System.in);
 		int[] num = new int[3];
 		
+		int result  = 0;
+		
 		System.out.print("Enter value for A, B, C[Separated by space]: ");
 		
 		String in  = input.nextLine();
 		
 		String[] get_val = in.split(" ");
 		
-		for(int i = 0; i<3; i++) {
-			
-		}
+		int a = Integer.parseInt(get_val[0]);
+		int b = Integer.parseInt(get_val[1]);
+		int c = Integer.parseInt(get_val[3]);
+		
 	}
 		
 }
