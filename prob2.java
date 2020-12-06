@@ -24,28 +24,30 @@ public class prob2 {
 			int b = Integer.parseInt(get_val[1]);
 			int c = Integer.parseInt(get_val[2]);
 			
-			System.out.println("QE: "+a+"x^2 + "+b+ "x +"+ c);
+			System.out.println("	QE: "+a+"x^2 + "+b+ "x +"+ c);
 			
 			int discriminat = ((b*b)-(4*a*c));
 			double root = Math.sqrt(discriminat);
 			
 			if(a == 0) {
-				System.out.println("Not a valid quadratic equation");
+				System.out.println("	Not a valid quadratic equation");
 				
 			}else if(discriminat > 0) {
 				double x1 = (-b+root)/(2*a);
 				double x2 = (-b-root)/(2*a);
 				
-				System.out.println("x1 = " + String.format("%.2f", x1) + " x2 = "+ String.format("%.2f", x2));
+				System.out.println("	x1 = " + String.format("%.2f", x1) + " x2 = "+ String.format("%.2f", x2));
 				
 			}else if(discriminat == 0) {
 				double result = -b/(2*a);
-				System.out.println("x = "+ String.format("%.2f", result));
+				System.out.println("	x = "+ String.format("%.2f", result));
 				
 			}else{
-				System.out.println("x = IMAGINARY");
+				System.out.println("	x = IMAGINARY");
 				
 			}
+			
+			System.out.println();
 			
 		}
 		
